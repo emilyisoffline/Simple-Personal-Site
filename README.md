@@ -1,4 +1,4 @@
-# Simple-Personal-Site
+# Simple Personal Site
 Here's a Simple Personal Site you can use for free without paying for development services!
 
 # How to Customize
