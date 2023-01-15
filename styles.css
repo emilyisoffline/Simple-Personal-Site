@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+body {
+    margin: 0;
+    overflow: hidden; /* Hide scrollbars */
+    user-select: none;
+    user-zoom: none;
+
+}
+
+* {
+    cursor: url('https://tobiasahlin.com/static/cursors/default.png'), auto;
+  }
+
+#overlay {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    background-color: rgb(0,0,0); /* Black fallback color */
+    color: white;
+    transition: opacity 1500ms;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    z-index: 10;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#entertext {
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#socials {
+    position: absolute;
+    object-position: center center;
+    background-color: rgba(0, 0, 0, 0.451);
+    border-radius: 1em;
+    padding: 1rem;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 5;
+    overflow: hidden;
+}
+
+#discord, #ig, #ogu {
+    padding: 1em;
+    height: 4em;
+    transition: scale 200ms;
+}
+
+#discord:hover, #ig:hover, #ogu:hover {
+    padding: 1em;
+    scale: 1.05;
+}
+
+#credit {
+    position: absolute;
+    color: white;
+    opacity: 0.25;
+    z-index: 4;
+    text-align: center;
+    min-width: 100%;
+    bottom: 0;
+    padding-bottom: 1em;
+}
+
+#creditText {
+    margin: 0;
+    padding: 0;
+}

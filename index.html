@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luna</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- made by ogu.gg/luna -->
+    <div id="overlay">
+        <p id="entertext">Click to enter...</p>
+    </div>
+    <div id="socials">
+        <a href="https://discord.gg/lumity" target="_blank">
+            <img id="discord" src="/assets/dc.svg">
+        </a>
+        <a href="https://instagram.com/emilysoffline" target="_blank">
+            <img id="ig" src="/assets/ig.svg">
+        </a>
+        <a href="https://ogu.gg/luna" target="_blank">
+            <img id="ogu" src="/assets/ogu.svg">
+        </a>
+    </div>
+    <div id="credit">
+        <p id="creditText">made by ogu.gg/luna</p>
+    </div>
+    
+    <video id="video-background" src="/assets/background.mp4" autoplay muted loop></video>
+    <script>
+        const sound = new Howl({
+            src: ['/assets/audio.mp3'],
+            html5: true,
+            loop: true
+        });
+
+        const divElements = document.getElementsByTagName('div');
+        divElements[0].addEventListener('click', () => {
+            if (divElements[0].classList.contains("hidden")) {
+                return
+            } else{
+                sound.play();
+                divElements[0].classList.add("hidden");
+                setTimeout(() => {
+                    divElements[0].style.zIndex = 0; 
+                }, 1250)
+                
+            }                     
+        })    
+    </script>
+    <!-- made by ogu.gg/luna -->
+</body>
+</html>
