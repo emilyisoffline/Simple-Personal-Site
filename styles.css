@@ -65,16 +65,19 @@ body {
     overflow: hidden;
 }
 
-#discord, #ig, #ogu {
+#socials > a > img {
     padding: 1em;
     height: 4em;
     transition: scale 200ms;
+    fill: #ffffff;
 }
 
-#discord:hover, #ig:hover, #ogu:hover {
+#socials > a > img:hover {
     padding: 1em;
     scale: 1.05;
+    cursor:pointer;
 }
+
 
 #credit {
     position: absolute;
